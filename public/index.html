@@ -24,7 +24,31 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+
+    <!-- for quiz -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script> <!-- Load jQuery -->
+        <style>
+            /* Your css codes */
+            .content { margin-top:54px; }
+            .header {padding:15px; position:fixed; top:0; width:100%; z-index:9999; }
+            .left-title { width:80px; color:#FFF; font-size:18px; float:left; }
+            .right-title { width:150px; text-align:right; float:right; color:#FFF;  }
+            .quiz-body { margin-top:15px; padding-bottom:50px; }
+            .option-block-container { margin-top:20px; max-width:420px; }
+            .option-block { padding:10px; background:aliceblue; border:1px solid #84c5fe; margin-bottom:10px; cursor:pointer; }
+            .result-question { font-weight:bold; }
+            .c-wrong { margin-left:20px; color:#FF0000; }
+            .c-correct {  margin-left:20px; color:green; }
+            .last-row { border-bottom:1px solid #ccc; padding-bottom:25px; margin-bottom:25px; }
+            .res-header { border-bottom:1px solid #ccc; margin-bottom:15px; padding-bottom:15px; }
+        </style>
+
+    <title>Invest India</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

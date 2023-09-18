@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+/* blinking animation */
+.blink-hard {
+  animation: blinker 1s step-end infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
