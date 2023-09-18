@@ -116,7 +116,7 @@ const Home = () => {
         <div className="slogan fixed z-50 overflow-y-auto top-0 w-full h-full left-0">
           <div className="h-full bg-white flex items-center justify-center text-center sm:block sm:p-0">
               <div className ="flex items-center justify-center align-center">
-              <video width="500" height="500" autoplay="autoplay">
+              <video width="500" height="500" autoplay="autoplay" loading="eager">
                 <source src={slogan} type="video/mp4" />
               </video>
               </div>
@@ -193,23 +193,23 @@ const Home = () => {
         <div className="w-full pt-10">
           <div className="m-auto overflow-hidden relative sm:w-2/3 w-5/6 rounded-lg">
               <ul className="flex w-[calc(400px*17)] animate-scroll">
-                  <li className="w-[400px] py-2"><img src={dyk1} /> </li>
-                  <li className="w-[400px] py-2"><img src={dyk2} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk3} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk4} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk5} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk6} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk7} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk8} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk9} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk10} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk11} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk12} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk13} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk14} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk15} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk16} /></li>
-                  <li className="w-[400px] py-2"><img src={dyk17} /></li>
+                  <li className="w-[400px] py-2"><img src={dyk1} loading="eager"/> </li>
+                  <li className="w-[400px] py-2"><img src={dyk2} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk3} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk4} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk5} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk6} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk7} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk8} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk9} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk10} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk11} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk12} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk13} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk14} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk15} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk16} loading="eager"/></li>
+                  <li className="w-[400px] py-2"><img src={dyk17} loading="eager"/></li>
               </ul>
           </div>
         </div>
