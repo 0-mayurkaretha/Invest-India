@@ -167,7 +167,7 @@ const Home = () => {
             <ul className="">
               <li className="active"><a href="index.html" className="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
               <li><a href="#services" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">General</a></li>
-              <li><a href="#about" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">personalized</a></li>
+              <li><a href="#about" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Personalized</a></li>
               <li><a href="#contact" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Premium</a></li>
             </ul>
           </div>

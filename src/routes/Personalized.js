@@ -95,7 +95,7 @@ const PersonalizedPage = () => {
                             <div className="hidden md:flex items-center space-x-1">
                             <a href="/" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
                             <a href="/general" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">General</a>
-                            <a href="#" className="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">personalized</a>
+                            <a href="#" className="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Personalized</a>
                             <a href="#" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Premium</a>
                             </div>
                         </div>
@@ -127,7 +127,7 @@ const PersonalizedPage = () => {
                         <ul className="">
                         <li ><a href="/" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 font-semibold">Home</a></li>
                         <li className="active"><a href="#" className="block text-sm px-2 py-4  text-white bg-green-500">General</a></li>
-                        <li><a href="#" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">personalized</a></li>
+                        <li><a href="#" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Personalized</a></li>
                         <li><a href="#" className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Premium</a></li>
                         </ul>
                     </div>
