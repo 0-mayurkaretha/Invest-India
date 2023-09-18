@@ -43,7 +43,7 @@ const PersonalizedPage = () => {
             label: "Your Portfolio  ",
             content: `If you link your portfolio, you may be able to know the risk level of your portfolio. This will make investors aware of the stocks that they are invested in.<br />Many a times they choose what is projected to them as a gimmick or if someone from their family of friend circle have mentioned or purchased it, without being fully aware about the history.<br />Ai will detect the risk level of your portfolio based on kind of assets you are invested in.<ol><li>Preferred= Preferrable - suggestions of the same risk appetite</li><li>Preferred, Preferrable high- Alternative Suggestions based on Preferrable (one step higher risk assets)</li><li>Preferred, preferrable Low- Alternative Suggestions based on Preferrable (one step Lower risk assets)</li></ol><br />
             <br />
-            <p>Info: <a href="https://docs.google.com/spreadsheets/d/1JCnirEBwi3qD-XzVdj1hRhe5wBWrs3hv/edit?usp=drive_link&ouid=110955628637744969146&rtpof=true&sd=true">Portfolio risk levels (download)</a></p>`,
+            <p>Info: <a href="https://docs.google.com/spreadsheets/d/1JCnirEBwi3qD-XzVdj1hRhe5wBWrs3hv/edit?usp=drive_link&ouid=110955628637744969146&rtpof=true&sd=true">Portfolio risk levels (download)</a></p><p>Info: <a href="https://docs.google.com/spreadsheets/d/1jhlpXtC0O-tWXroeAFdwQl4gEhNZMBpz/edit?usp=drive_link&ouid=110955628637744969146&rtpof=true&sd=true">Asset suggestions(download)</a></p>`,
           },
           {
             label: "Know your Financial Health  ",
