@@ -229,11 +229,11 @@ const Home = () => {
           </div>
           <div className="flex">
             <svg xmlns="http://www.w3.org/2000/svg" className="text-red-600" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854 12.854L11 8l4.854-4.854a.503.503 0 0 0 0-.707L13.561.146a.499.499 0 0 0-.707 0L8 5L3.146.146a.5.5 0 0 0-.707 0L.146 2.439a.499.499 0 0 0 0 .707L5 8L.146 12.854a.5.5 0 0 0 0 .707l2.293 2.293a.499.499 0 0 0 .707 0L8 11l4.854 4.854a.5.5 0 0 0 .707 0l2.293-2.293a.499.499 0 0 0 0-.707z"/></svg>
-            <p className="text-left text-lg">  &nbsp;&nbsp;When you are offered Guaranteed returns in investment scheme.</p>
+            <p className="text-left text-lg">  &nbsp;&nbsp;When Someone promises you of high returns with no risk.</p>
           </div>
           <div className="flex">
             <svg xmlns="http://www.w3.org/2000/svg" className="text-red-600" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854 12.854L11 8l4.854-4.854a.503.503 0 0 0 0-.707L13.561.146a.499.499 0 0 0-.707 0L8 5L3.146.146a.5.5 0 0 0-.707 0L.146 2.439a.499.499 0 0 0 0 .707L5 8L.146 12.854a.5.5 0 0 0 0 .707l2.293 2.293a.499.499 0 0 0 .707 0L8 11l4.854 4.854a.5.5 0 0 0 .707 0l2.293-2.293a.499.499 0 0 0 0-.707z"/></svg>
-            <p className="text-left text-lg">  &nbsp;&nbsp;When you are offered Guaranteed returns in investment scheme.</p>
+            <p className="text-left text-lg">  &nbsp;&nbsp;When you find Lack of transparency about any investment scheme.</p>
           </div>
           <div className="flex">
             <svg xmlns="http://www.w3.org/2000/svg" className="text-green-600" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="m9 20.42l-6.21-6.21l2.83-2.83L9 14.77l9.88-9.89l2.83 2.83L9 20.42Z"/></svg>
