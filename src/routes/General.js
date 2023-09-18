@@ -253,83 +253,17 @@ const GeneralPage = () => {
 	},
 	{
 		"id" : 20,
-		"question" : "How can you detect the client&rsquo;s browser name?",
+		"question" : "Q",
 		"options" : [
-			{"a": "navigator.appName", 
-			 "b":"browser.name",
-			 "c":"client.navName"
+			{"a": "a", 
+			 "b":"b",
+			 "c":"b"
 			}
 			],
-		"answer":"navigator.appName",
+		"answer":"b",
 		"score":0,
 		"status": ""
 	},
-	{
-		"id" : 21,
-		"question" : "Which event occurs when the user clicks on an HTML element?",
-		"options" : [
-			{"a": "onchange", 
-			 "b":"onclick",
-			 "c":"onmouseclick", 
-			 "d":"onmouseover"
-			}
-			],
-		"answer":"onclick",
-		"score":0,
-		"status": ""
-	},
-	{
-		"id" : 22,
-		"question" : "How do you declare a JavaScript variable?",
-		"options" : [
-			{"a": "var carName;", 
-			 "b":"variable carName;",
-			 "c":"v carName;"
-			}
-			],
-		"answer":"var carName;",
-		"score":0,
-		"status": ""
-	},
-	{
-		"id" : 23,
-		"question" : "Which operator is used to assign a value to a variable?",
-		"options" : [
-			{"a": "*", 
-			 "b":"-",
-			 "c":"=",
-			 "d":"x"
-			}
-			],
-		"answer":"=",
-		"score":0,
-		"status": ""
-	},
-	{
-		"id" : 24,
-		"question" : "What will the following code return: Boolean(10 &gt; 9)",
-		"options" : [
-			{"a": "NaN", 
-			 "b":"false",
-			 "c":"true"
-			}
-			],
-		"answer":"true",
-		"score":0,
-		"status": ""
-	},
-	{
-		"id" : 25,
-		"question" : "Is JavaScript case-sensitive?",
-		"options" : [
-			{"a": "No", 
-			 "b":"Yes"
-			}
-			],
-		"answer":"Yes",
-		"score":0,
-		"status": ""
-	}
 	]
 }
 
@@ -419,67 +353,46 @@ var quizApp = function() {
 	}	
 	 
 	this.changeQuestion = function(cque) {
-			this.currentque = this.currentque + cque;
-			this.displayQuiz(this.currentque);	
+			if((this.currentque + cque)>-1){
+				this.currentque = this.currentque + cque;
+				this.displayQuiz(this.currentque);
+			}
+				
 			
 	}
 	
 }
 
 
-var jsq = new quizApp();
+	var jsq = new quizApp();
 
-var selectedopt;
-	$(document).ready(function() {
-			jsq.displayQuiz(0);		
-		
-	$('#question-options').on('change', 'input[type=radio][name=option]', function(e) {
-
-			
+	var selectedopt;
+	$(document).on('load',function() {
+		jsq.displayQuiz(0);		
+		$('#question-options').on('change', 'input[type=radio][name=option]', function(e) {
 			$(this).prop("checked", true);
 				selectedopt = $(this).val();
 		});
 	});
 
+	// executes when complete page is fully loaded, including all frames, objects and images
+	document.addEventListener("click", function(e){
 
-  
-// 	$(window).on('load',function() {
-//     // executes when complete page is fully loaded, including all frames, objects and images
-//       document.getElementById("next").addEventListener("click", function(e){
-//         e.preventDefault();
-//       if(selectedopt) {
-//         jsq.checkAnswer(selectedopt);
-//         }
-//         jsq.changeQuestion(1);
-//       })
+		if(e.target.id === "next"){
+			if(selectedopt) {
+				jsq.checkAnswer(selectedopt);
+				}
+				jsq.changeQuestion(1);
+		}
 
-//       document.getElementById("previous").addEventListener("click", function(e){
-//       e.preventDefault();
-//       if(selectedopt) {
-//         jsq.checkAnswer(selectedopt);
-//       }
-//         jsq.changeQuestion(-1);
-//       })
-//    });
-	
+		if(e.target.id === "previous"){
+			if(selectedopt) {
+				jsq.checkAnswer(selectedopt);
+			}
+				jsq.changeQuestion(-1);
+		}
+	})
 
-
-
-	// $('#next').click(function(e) {
-	// 		e.preventDefault();
-	// 		if(selectedopt) {
-	// 			jsq.checkAnswer(selectedopt);
-	// 		}
-	// 		jsq.changeQuestion(1);
-	// });	
-	
-	// $('#previous').click(function(e) {
-	// 	e.preventDefault();
-	// 	if(selectedopt) {
-	// 		jsq.checkAnswer(selectedopt);
-	// 	}
-	// 		jsq.changeQuestion(-1);
-	// });	
 
     const tabsData = [
         {
@@ -504,7 +417,7 @@ var selectedopt;
           },
           {
             label: "Quiz",
-            content: `<div class="content"><div class="container-fluid"><div class="row"><div class="col-sm-12"><div id="result" class="quiz-body"><form name="quizForm" onSubmit=""><fieldset class="form-group"><h4><span id="qid">1.</span> <span id="question"></span></h4><div class="option-block-container" id="question-options"></div> <!-- End of option block --></fieldset><button  name="previous" id="previous" class="btn btn-success">Previous</button>&nbsp;<button  name="next" id="next" class="btn btn-success">Next</button></form></div></div> <!-- End of col-sm-12 --></div> <!-- End of row --></div> <!-- ENd of container fluid --></div> <!-- End of content -->`,
+            content: `<div class="content"><div class="container-fluid"><div class="row"><div class="col-sm-12"><div id="result" class="quiz-body"><form name="quizForm" onSubmit=""><fieldset class="form-group"><h4><span id="qid">1.</span> <span id="question"></span></h4><div class="option-block-container" id="question-options"></div> <!-- End of option block --></fieldset><div  name="previous" id="previous" class="btn btn-success">Previous</div>&nbsp;<div  name="next" id="next" class="btn btn-success">Next</div></form></div></div> <!-- End of col-sm-12 --></div> <!-- End of row --></div> <!-- ENd of container fluid --></div> <!-- End of content -->`,
           },
           {
             label: "Glossary",
