@@ -29,7 +29,7 @@ const PersonalizedPage = () => {
           },
           {
             label: "Sentiment Analysis ",
-            content: 'Your Preferred risk appetite (which you opted)<br /> - High Risk (From Fill your details sheet- B-6)<br /> <br /> But Preferable risk appetite (Base on AI suggestion)<br /> - Moderate (From Logic Sheet)<br /> <br /> Still your choice<br /> - Which one would you opt for- (High/ Moderate)<br /> <br /> Based on your selection, you will be suggested appropriate investment instruments.<br /> <br /><p>Info: <a href="https://docs.google.com/spreadsheets/d/1enwsY0Cu3uKZCxsJcKONsIA-3VoGXIh8/edit?usp=drive_link&ouid=110955628637744969146&rtpof=true&sd=true">Your Risk Apetite(download)</a></p>',
+            content: 'Your Preferred risk appetite (which you opted)<br /> - High Risk (From Fill your details sheet- B-6)<br /> <br /> But Preferable risk appetite (Base on AI suggestion)<br /> - Moderate (From Logic Sheet)<br /> <br /> Still your choice<br /> - Which one would you opt for- (High/ Moderate)<br /> <br /> Based on your selection, you will be suggested appropriate investment instruments.<br /> <br /><p>Info: <a href="https://docs.google.com/spreadsheets/d/1enwsY0Cu3uKZCxsJcKONsIA-3VoGXIh8/edit?usp=drive_link&ouid=110955628637744969146&rtpof=true&sd=true">Your Risk Apetite(download)</a></p><p>Info: <a href="https://docs.google.com/spreadsheets/d/1jhlpXtC0O-tWXroeAFdwQl4gEhNZMBpz/edit?usp=drive_link&ouid=110955628637744969146&rtpof=true&sd=true">Asset suggestions(download)</a></p>',
           },
           {
             label: "Your Learning Section ",
