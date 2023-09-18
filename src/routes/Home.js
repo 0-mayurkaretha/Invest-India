@@ -110,6 +110,65 @@ const Home = () => {
         
         })
 
+    //script for choose language
+        const locales = ["en-GB","ar-SA","zh-CN","de-DE","es-ES","fr-FR","hi-IN","it-IT","in-ID","ja-JP","ko-KR","nl-NL","no-NO","pl-PL","pt-BR","sv-SE","fi-FI","th-TH","tr-TR","uk-UA","vi-VN","ru-RU","he-IL"];
+
+        const delay = ms => new Promise(
+          resolve => setTimeout(resolve, ms)
+        );
+        
+        function getFlagSrc(countryCode) {
+          return /^[A-Z]{2}$/.test(countryCode)
+            ? `https://www.countryflagicons.com/SHINY/64/${countryCode.toUpperCase()}.png`
+            : "";
+        } 
+        
+        const dropdown = async () => {
+          await delay(2000);
+          const dropdownBtn = document.getElementById("dropdown-btn");
+          const dropdownContent = document.getElementById("dropdown-content");
+      
+          function setSelectedLocale(locale) {
+            const intlLocale = new Intl.Locale(locale);
+            const langName = new Intl.DisplayNames([locale], {
+              type: "language",
+            }).of(intlLocale.language);
+      
+            dropdownContent.innerHTML = "";
+      
+            const otherLocales = locales.filter((loc) => loc !== locale);
+            otherLocales.forEach((otherLocale) => {
+              const otherIntlLocale = new Intl.Locale(otherLocale);
+              const otherLangName = new Intl.DisplayNames([otherLocale], {
+                type: "language",
+              }).of(otherIntlLocale.language);
+      
+              const listEl = document.createElement("li");
+              listEl.innerHTML = `${otherLangName}<img src="${getFlagSrc(
+                otherIntlLocale.region
+              )}" />`;
+              listEl.value = otherLocale;
+              listEl.addEventListener("mousedown", function () {
+                setSelectedLocale(otherLocale);
+              });
+              dropdownContent.appendChild(listEl);
+            });
+      
+            dropdownBtn.innerHTML = `<img src="${getFlagSrc(
+              intlLocale.region
+            )}" />${langName}<span class="arrow-down"></span>`;
+          }
+      
+          setSelectedLocale(locales[0]);
+          const browserLang = new Intl.Locale(navigator.language).language;
+          for (const locale of locales) {
+            const localeLang = new Intl.Locale(locale).language;
+            if (localeLang === browserLang) {
+              setSelectedLocale(locale);
+            }
+          }
+        }
+
     return (
       <div>
         {/* slogan */}
@@ -144,6 +203,14 @@ const Home = () => {
                 <a href="#" className="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
                 <a href="#" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
               </div>
+
+              {/* change language */}
+              <div class="dropdown pt-3 -ml-36" tab-index="0" onload={dropdown()}>
+                <button id="dropdown-btn" ></button>
+                <ul class="dropdown-content" id="dropdown-content" ></ul>
+              </div>
+
+
               {/* <!-- Mobile menu button --> */}
               <div className="md:hidden flex items-center" onClick={clicked}>
                 <button className="outline-none mobile-menu-button">
