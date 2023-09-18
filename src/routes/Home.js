@@ -117,7 +117,7 @@ const Home = () => {
           <div className="h-full bg-white flex items-center justify-center text-center sm:block sm:p-0">
               <div className ="flex items-center justify-center align-center">
               <video width="500" height="500" autoplay="autoplay" loading="eager">
-                <source src={slogan} type="video/mp4" />
+                <source rel="prefetch" src={slogan} type="video/mp4" loading="eager"/>
               </video>
               </div>
           </div>
