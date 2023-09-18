@@ -116,7 +116,7 @@ const Home = () => {
         const delay = ms => new Promise(
           resolve => setTimeout(resolve, ms)
         );
-        
+
         function getFlagSrc(countryCode) {
           return /^[A-Z]{2}$/.test(countryCode)
             ? `https://www.countryflagicons.com/SHINY/64/${countryCode.toUpperCase()}.png`
@@ -322,15 +322,14 @@ const Home = () => {
         </div>
       </div>
 
-
-        <div className="modal fixed z-40 overflow-y-auto top-0 w-full h-full left-0 pt-10 hidden" id="modal">
-          <div className="h-full flex items-center justify-center pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-              <div className="inset-0 transition-opacity">
-                <div className="h-[1600px] absolute inset-0 bg-gray-900 opacity-75" />
-              </div>
-              <span className="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
-              <div className="inline-block align-center bg-green-50 px-10 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-6xl w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-                <div className="bg-green-50 px-10 pt-5 pb-4 sm:p-6 sm:pb-4">
+        <div class="h-full fixed z-10 overflow-y-auto top-0 w-full left-0 hidden" id="modal">
+          <div class="h-full flex items-center justify-center pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class=" inset-0 transition-opacity">
+              <div class="h-[1800px] absolute inset-0 bg-gray-900 opacity-75" />
+            </div>
+            <span className="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+            <div class="inline-block align-center bg-green-50 px-10 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-6xl w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+        <div className="bg-green-50 px-10 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <h2><strong className="text-3xl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <u>Be Aware of different kind of Frauds:</u></strong></h2>
                   <br type="_moz" />
                   <strong>1.</strong> <strong>Caution Against Unrealistic redressal:</strong><br />
@@ -401,12 +400,12 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-200 px-4 py-3 text-right">
-                  <button type="button" className="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2" onClick={toggleModal}><i className="fas fa-times"></i>Close</button>
-                </div>
-              </div>
-          </div>
+      <div class="bg-gray-200 px-4 py-3 text-right">
+        <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2" onClick={toggleModal}><i class="fas fa-times"></i> Close</button>
       </div>
+    </div>
+  </div>
+</div>
       
       <div  className="border-t-2 border-slate-200 "></div>
 
