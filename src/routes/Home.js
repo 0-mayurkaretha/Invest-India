@@ -177,6 +177,9 @@ const Home = () => {
 
       {/* ================message of the day========== */}
       <div>
+        <div className="pt-10">
+          <span className="text-2xl font-semibold">Message Of The Day</span>
+        </div>
         <div className="sm:w-1/2 w-5/6 mt-8 mx-auto bg-green-50 rounded-lg shadow p-8">
           <h2 className="italic text-right text-blue-darkest leading-normal sm:text-xl text-md">
             {messageOfTheDay}
