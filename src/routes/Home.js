@@ -135,7 +135,7 @@ const Home = () => {
                 <div className="hidden md:flex items-center space-x-1">
                   <a href="" className="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
                   <a href="/general" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">General</a>
-                  <a href="#" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">personalized</a>
+                  <a href="/personalized" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Personalized</a>
                   <a href="#" className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Premium</a>
                 </div>
               </div>
